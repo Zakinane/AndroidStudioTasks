@@ -1,0 +1,52 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversion Dinar → Euro"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/currencyInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Saisir le montant"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/swapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inverser : Euro ↔ Dinar"
+        android:layout_below="@id/currencyInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        android:layout_below="@id/swapButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Résultat"
+        android:textSize="18sp"
+        android:layout_below="@id/convertButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

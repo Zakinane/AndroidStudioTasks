@@ -1,0 +1,60 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversion Dinar → Euro"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/currencyInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Saisir le montant"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginTop="16dp"/>
+
+    <Button
+        android:id="@+id/swapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inverser : Euro ↔ Dinar"
+        app:layout_constraintTop_toBottomOf="@id/currencyInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginTop="16dp"/>
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        app:layout_constraintTop_toBottomOf="@id/swapButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Résultat"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/convertButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
